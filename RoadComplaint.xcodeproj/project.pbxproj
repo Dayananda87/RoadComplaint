@@ -14,6 +14,8 @@
 		F9A470FD1DB84EE3005BCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A470FC1DB84EE3005BCD68 /* Assets.xcassets */; };
 		F9A471001DB84EE4005BCD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A470FE1DB84EE4005BCD68 /* LaunchScreen.storyboard */; };
 		F9A4710B1DB84EE4005BCD68 /* RoadComplaintUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A4710A1DB84EE4005BCD68 /* RoadComplaintUITests.m */; };
+		F9E800531DB8542100F41260 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E800521DB8542100F41260 /* AVFoundation.framework */; };
+		F9E800551DB8542700F41260 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E800541DB8542700F41260 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		F9A471061DB84EE4005BCD68 /* RoadComplaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadComplaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A4710A1DB84EE4005BCD68 /* RoadComplaintUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadComplaintUITests.m; sourceTree = "<group>"; };
 		F9A4710C1DB84EE4005BCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E800521DB8542100F41260 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9E800541DB8542700F41260 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E800551DB8542700F41260 /* MobileCoreServices.framework in Frameworks */,
+				F9E800531DB8542100F41260 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				F9A470EF1DB84EE3005BCD68 /* RoadComplaint */,
 				F9A471091DB84EE4005BCD68 /* RoadComplaintUITests */,
 				F9A470EE1DB84EE3005BCD68 /* Products */,
+				F9E800511DB8542100F41260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +116,15 @@
 				F9A4710C1DB84EE4005BCD68 /* Info.plist */,
 			);
 			path = RoadComplaintUITests;
+			sourceTree = "<group>";
+		};
+		F9E800511DB8542100F41260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9E800541DB8542700F41260 /* MobileCoreServices.framework */,
+				F9E800521DB8542100F41260 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +432,7 @@
 				F9A471111DB84EE4005BCD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9A471121DB84EE4005BCD68 /* Build configuration list for PBXNativeTarget "RoadComplaintUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				F9A471141DB84EE4005BCD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,9 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UINavigationBar appearance] setBarTintColor:[AppDelegate colorWithHex:0x00aced]];
     return YES;
 }
 
++ (UIColor *)colorWithHex:(UInt32)col {
+    unsigned char r, g, b;
+    b = col & 0xFF;
+    g = (col >> 8) & 0xFF;
+    r = (col >> 16) & 0xFF;
+    return [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:1];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
